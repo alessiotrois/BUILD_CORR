@@ -1,0 +1,12 @@
+9 Sept 2013
++ management of 16 bit (short int) overflow (from contact 32768)
+
+24 July 2009
++ added SA quaternion correction to Silicon Tracker
+28 Aprile 2010
++ risolto problema timing SS
++ aggiornate routine di rotazione
+01 Agosto 2011
++ invalidati tempi doppi
++ invalidati dati con SS sbagliati
++ corretto algoritmo start e stop time

@@ -1,0 +1,2 @@
+infileTCS,s,q,"",,,"Enter TCS file name"
+outfile,s,q,"",,,"Enter output file name"

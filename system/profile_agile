@@ -1,0 +1,33 @@
+# this script is run by /etc/bash.bashrc.local
+
+############################################################################################
+# Configuration of basic library location
+export AGILE_LOCAL=/usr/local_gtb
+
+#external libraries
+export AGILE_CFITSIO_INCLUDE=$LOCAL/cfitsio/include
+export AGILE_CFITSIO_LIB=$LOCAL/cfitsio/lib
+export AGILE_CFITSIO_LIBNAME=lcfitsio
+export ROOTSYSBASE=$LOCAL/root
+export ROOTSYS=$ROOTSYSBASE/root
+
+########### HEADAS Setting ##############
+export HEADAS=$LOCAL/headas/i686-pc-linux-gnu-libc2.2
+
+########### working directories #########
+export AGILE_PROJECTS=$HOME/Projects_GRID
+
+#library for development system
+export AGILE_LIBPIL_INCLUDE=$AGILE_PROJECTS/agile_pil_lib/include
+export AGILE_LIBPIL_LIB=$AGILE_PROJECTS/agile_pil_lib/lib
+export AGILE_LIBWCS_INCLUDE=$AGILE_PROJECTS/agile_wcs_lib/include
+export AGILE_LIBWCS_LIB=$AGILE_PROJECTS/agile_wcs_lib/lib
+
+export LD_LIBRARY_PATH=$ROOTSYS/lib:$LD_LIBRARY_PATH:$HEADAS/lib
+
+############ADC##############
+export ADC=$HOME/ADC
+export PFILES=$ADC/PFILES
+
+echo "$LOCAL/etc/profile_agile: AGILE environment setup completed"
+

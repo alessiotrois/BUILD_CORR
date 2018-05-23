@@ -1,0 +1,2 @@
+infileOBTUTC,s,q,"",,,"Enter OBTUTC file name"
+outfile,s,q,"",,,"Enter output file name"

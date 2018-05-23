@@ -1,0 +1,2 @@
+infile,s,ql,"pippo",,,"Enter input file name"
+outfile,s,ql,"/harry/alessio/ADC/COR/SIM041213_1_3901_001.evt",,,"Enter output file name"

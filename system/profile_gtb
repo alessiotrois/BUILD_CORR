@@ -1,0 +1,67 @@
+# /usr/local/etc/profile_gtb: system-wide agile environment .profile file for the Bourne shell (sh(1))
+# and Bourne compatible shells (bash(1), ksh(1), ash(1), ...).
+# this script is run by /etc/bash.bashrc.local
+
+############################################################################################
+#AGILE GSE TEAM - CNR-IASF Bologna: additional configuration (modified by Andrea Bulgarelli)
+############################################################################################
+
+#external libraries
+export GTB_CFITSIO_INCLUDE=/usr/local/cfitsio/include
+export GTB_CFITSIO_LIB=/usr/local/cfitsio/lib
+export GTB_NCURSES=/usr/local/ncurses
+export ROOTSYS=/usr/local/root
+export QTDIR=/usr/lib/qt3
+export LHEASOFT=/usr/local/ftools
+
+. $LHEASOFT/lhea-init.sh 
+
+export ROSE_DIR=/usr/local/Rational/releases/rose.2002.05.20/bin
+
+export OPENGL=/usr/local
+
+#paths for the running system
+export GTB_ROOT=$HOME/local
+export GTB_INCLUDE=$GTB_ROOT/include
+export GTB_LIB=$GTB_ROOT/lib
+export GTB_BIN=$GTB_ROOT/bin
+
+#working directories
+export GTB_PROJECTS=$HOME/Projects
+
+#library for development system
+export GTB_COMMON_INCLUDE=$GTB_PROJECTS/common_include
+export GTB_DISCOS_LIB=$GTB_PROJECTS/DISCoSlib/lib
+export GTB_PACKETLIB_ROOT=$GTB_PROJECTS/PacketLib
+export GTB_PACKETLIB_INCLUDE=$GTB_PACKETLIB_ROOT/include
+export GTB_PACKETLIB_LIB=$GTB_PACKETLIB_ROOT/lib
+export GTB_PROCESSORLIB_ROOT=$GTB_PROJECTS/ProcessorLib
+export GTB_PROCESSORLIB_INCLUDE=$GTB_PROCESSORLIB_ROOT/include
+export GTB_PROCESSORLIB_LIB=$GTB_PROCESSORLIB_ROOT/lib
+export GTB_LIBQL2_ROOT=$GTB_PROJECTS/libQL2
+export GTB_LIBQL2_INCLUDE=$GTB_LIBQL2_ROOT/code
+export GTB_LIBQL2_LIB=$GTB_LIBQL2_ROOT/lib
+
+
+
+
+
+PATH=$PATH:.:$ROOTSYS/bin:$ROSE_DIR:$GTB_BIN:$QTDIR/bin
+
+export LD_LIBRARY_PATH=$ROOTSYS/lib:/usr/local/lib:$QTDIR/bin:$LD_LIBRARY_PATH
+
+
+export GTB_QL_USERHOME=$HOME/ql_output
+
+#alias
+alias proj='cd $GTB_PROJECTS'
+alias bin='cd $GTB_ROOT'
+alias rose='cd $ROSE_DIR; ./rose'
+
+#CVS standard configuration
+export CVSROOT=:pserver:$USER@gtbcvs.bo.iasf.cnr.it:/home/repository/cvs/gtb
+export CVSEDITOR=gedit
+
+export PATH
+
+echo "/usr/local/etc/profile_gtb: AGILE GTB environment setup completed"

@@ -1,0 +1,15 @@
+# Script for CVS directory removing in a Project dir
+DIR_TO_REMOVE="CVS"
+CVS_DIR=`tree  -d -f -i | grep $DIR_TO_REMOVE`
+echo "The directory:"
+echo $CVS_DIR
+echo "ARE YOU SURE <yes>?"
+read ctrl_var
+#echo $ctrl_var
+if [ $ctrl_var == "yes" ]
+then
+	rm -r -f $CVS_DIR
+  	echo "ALL CVS DIR REMOVED"
+else
+  	echo "CVS DIR NOT REMOVED!!!"
+fi

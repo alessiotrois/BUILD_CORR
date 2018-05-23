@@ -1,0 +1,14 @@
+2013 Sept 09
++ CorUtilities.cpp: management of 16 bit (short int) overflow (from contact 32768) 
+
+
+change log
+
+28/01/2009 Aggiunto nella libreria un modulo per gestire il leap second inserito alla fine del 2008
+
+28/04/2010 Cambiata la libreria WriteTime per gestire meglio la memoria
+
+01/08/2011 Corretto problema ricircolo registro di tempo
+
+08/03/2016 Aggiornata la gestione del leap second post 1 Luglio per tutti i correttori
+08/03/2016 Gestiti iricircoli dei buffer di tempo del Settembre 2015 per tutti i correttori

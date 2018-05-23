@@ -1,0 +1,6 @@
+# Launch the GTB environement definition script
+ . /usr/local/etc/profile_gtb
+ . /usr/local/etc/profile_agile
+#
+# End of /etc/bash.bashrc.local
+#

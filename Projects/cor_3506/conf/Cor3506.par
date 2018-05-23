@@ -1,0 +1,2 @@
+infile,s,ql,"",,,"Enter input file name"
+outfile,s,ql,"",,,"Enter output file name"

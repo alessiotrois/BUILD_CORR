@@ -1,0 +1,3 @@
+infile,s,q,"",,,"Enter Cor File file name"
+infiledrift,s,q,"",,,"Enter Cor File Drift file name"
+outfile,s,q,"",,,"Enter output file name"

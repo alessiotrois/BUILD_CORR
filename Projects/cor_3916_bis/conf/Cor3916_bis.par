@@ -1,0 +1,3 @@
+infile,s,ql,"",,,"Enter input file name"
+infileOPM,s,ql,"",,,"Enter OPM file name"
+outfile,s,ql,"",,,"Enter output file name"

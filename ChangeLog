@@ -1,0 +1,128 @@
+27 Jan 2017
+TAG CVS: BUILD27
++ modifica libreria per gestire correttamente leap second dopo riaccensione autonoma PDHU (e GPS) avvenuta tra le 13.30 UTC e le 19.09 UTC  del 24/1/2017
+
+13 December 2016
+TAG CVS: BUILD26
++ cor_3905
++ leap second
+
+28 October 2016
+TAG CVS: BUILD25
+
+
+28 July 2016
+TAG CVS: BUILD24
++ cor_obtutc
++ cor_tcs
++ cor_drift
++ cor_33XY_bis
+
+18 March 2016
+TAG CVS: BUILD23
++ all changes after the July-August 2015 on-board problems
+
+12 Jun 2015
+=================================
+TAG CVS: BUILD22
++ leap second
+
+9 Sept 2013
+=================================
+TAG CVS: BUILD21
++ agile_cor_lib: CorUtilities.cpp: management of 16 bit (short int) overflow (from contact 32768)
++ 3914: management of 16 bit (short int) overflow (from contact 32768) 
++ 3914: changed version keyword
++ Makefile: changes 
+
+8 June 2012
+=================================
+TAG CVS: BUILD20 
++ added kalmanFilterCGS_AGILE
++ added cor3914_bis
++ changes in 
+
+BUILD_CORR
+    3914
+    3916
+    agile_cor_lib
+for leap second 2012 
+
+16 Sep 2011
+=================================
+TAG CVS: BUILD19
++ 3901, 3908 corretto problema ricircolo
++ 3914 correzione salti spuri di S/S
+
+27 Jul 2011
+=================================
+TAG CVS: BUILD18
++3901
++3908
+che sono influenzati da agile_cor_lib:
+Corretto problema ricircolo registro di tempo
+
+20 May 2010
+=================================
+TAG CVS: BUILD17
++ 3901
++ 3914
++ 3916: [ TIME(3916) + TIMEZERO(3916) ]sec /86400 + MJDREF(3916) =tempo assoluto
++ agile_cor_lib
+
+24 July 2009
+=================================
+TAG CVS: BUILD16
++ quaternion correction in 3914 for GRID alignment
+
+28 January 2009
+==================================
+TAG CVS: BUILD15
+Cor3901:
++ Eliminati i centri cluster con strip disabilitate con basso rms
++ Eliminati i centri cluster con strip rumorose
++ Aggiunto un parametro nel Cor3901.par che consiste nell'index dei 3903
+
+Cor3908:
++ Corretto il tempo del BSTART e BSTOP
+
+15 February 2008
+==================================
+TAG CVS: BUILD14
++ new 3905
++ 3906
++ 3907
++ changed name from 35XX to 35XY
+
+18 January 2008
+==================================
+TAG CVS: BUILD13
+Added the following corrector:
++ 0101
++ 3401
++ 35XX
++ 3503
++ 3504
++ 3505
++ 3506
++ 3601
++ 3904
+
+NB: 3300 is 33XX
+NB: the time of 3401 is related to PDHU time at switch on. No GPS time is used,
+
+14 September 2007
+==================================
+TAG CVS: BUILD11
+
+
+20 March 2007
+==================================
+TAG CVS: BUILD10
+
++ first issue of the correction. The tag is syncronized with the BUILD_GRID projects CVS TAG
++ added cor3905
+
+
+
+
